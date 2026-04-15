@@ -49,7 +49,7 @@ Example setup:
 - Arduino Uno/Nano
 - PC running the Python dashboard
 
-You can add wiring photos or diagrams here.
+## Wiring photos
 
 ![AMS Meter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134246.jpg)
 ![Cat cable adapter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134317.jpg)
