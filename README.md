@@ -95,8 +95,8 @@ Potential next steps:
 
 ## Author
 
-Your Name
+Thor Elvin Valø
 
 ## License
 
-Add your preferred license here.
+Open Source
