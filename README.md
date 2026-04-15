@@ -83,10 +83,10 @@ Example structure based on this repository:
 ---
 
 ### Live dashboard
-![Live dashboard](images/dashboard_live.png)
+![Live dashboard](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Live_Dashboard.png)
 
 ### Analysis tab
-![Analysis tab](images/dashboard_analysis.png)
+![Analysis tab](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Analysis_Dashboard.png)
 
 ### Hardware setup
 ![AMS Meter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134246.jpg)
@@ -307,7 +307,5 @@ Planned or possible next steps:
 ---
 
 ## License
-
-Add your preferred license here, for example:
 
 **MIT License**
