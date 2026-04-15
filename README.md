@@ -90,10 +90,20 @@ Example structure based on this repository:
 
 ### Hardware setup
 ![AMS Meter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134246.jpg)
+
+### Cat termination adapter
 ![Cat cable adapter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134317.jpg)
+
+### Pin 1 and 2 connected, polarity does not matter
 ![Cat pin 1 and 2](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134356.jpg)
+
+### MBUS adapter wiring, The pin marked RXD M-Bus adapter is actually the one sending data...
 ![MBUS adapter wiring](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134414.jpg)
+
+### Arduino wiring, Data frames are read on D2.
 ![Arduino wiring](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134532.jpg)
+
+### Full wiring overview
 ![Complete setup](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134558.jpg)
 
 ---
@@ -103,7 +113,7 @@ Example structure based on this repository:
 Example setup:
 
 - Smart meter with HAN port enabled
-- M-Bus / HAN to TTL adapter
+- M-Bus to TTL interface based on the TI TSS721 transceiver.
 - Arduino Uno or Nano
 - USB connection from Arduino to PC
 - Windows PC running Python
