@@ -117,7 +117,7 @@ Data frames are read on **D2**.
 
 ---
 
-## Wiring diagram
+## Wiring diagram summary
 
 The hardware is connected as follows:
 
@@ -137,26 +137,13 @@ The hardware is connected as follows:
 - **Arduino to PC**
   - Connect the Arduino to the PC with USB
   - The Arduino forwards complete HAN frames to the Python application over USB serial
- 
+
 ---
-
-### Summary
-
-```text
-Smart meter HAN port (RJ45 pin 1 + pin 2)
-        ->
-M-Bus / HAN to TTL adapter
-        ->
-Adapter RXD -> Arduino D2
-Adapter GND -> Arduino GND
-        ->
-Arduino USB
-        ->
-PC running the Python dashboard
 
 ## Repository structure
 
 Example structure based on this repository:
+```
 
 ```text
 .
