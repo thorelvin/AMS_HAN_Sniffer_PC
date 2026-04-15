@@ -9,12 +9,16 @@ The Arduino is intentionally kept simple and forwards raw smart meter frames to 
 
 The project was developed as a hands-on exploration of smart metering, HAN communication, live data handling, and troubleshooting-oriented presentation of electrical consumption data.
 
+## Verified hardware setup
+
+The hardware setup used in this project has been verified in practice.
+
 ---
 
-### Live dashboard
+### Screenshot of Live dashboard
 ![Live dashboard](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Live_Dashboard.png)
 
-### Analysis tab
+### Screenshot of Analysis tab
 ![Analysis tab](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Analysis_Dashboard.png)
 
 ---
@@ -78,10 +82,6 @@ The Python application is responsible for:
 
 ---
 
-## Verified hardware setup
-
-The hardware setup used in this project has been verified in practice.
-
 Example setup:
 
 - Smart meter with HAN port enabled
@@ -108,7 +108,7 @@ The pin marked **RXD** (yellow cable) on the M-Bus adapter is the signal line us
 ![MBUS adapter wiring](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134414.jpg)
 
 ### Arduino wiring  
-Data frames are read on **D2**.
+Arduino wiring: data frames are received on **D2**.
 ![Arduino wiring](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134532.jpg)
 
 ### Full wiring overview
@@ -146,12 +146,12 @@ Example structure based on this repository:
 
 ```text
 .
-├── HAN/
+├── HAN
 ├── han_dashboard.py
 └── README.md
 ```
 
-- `HAN/` – Arduino/HAN-related project material
+- `HAN/` – Arduino/HAN-related images
 - `han_dashboard.py` – main Python dashboard application
 - `README.md` – project documentation
 
