@@ -1,67 +1,119 @@
 # HAN Energy Dashboard
 
-A lightweight HAN/AMS smart meter monitoring project built with Arduino and Python.
+A practical HAN/AMS smart meter monitoring and analysis project built with Arduino and Python.
 
-This repository contains the PC-side dashboard application together with the project material needed for the Arduino bridge workflow. The Arduino acts as a simple serial bridge that forwards raw smart meter frames to the PC, while the Python application handles parsing, CSV logging, live visualization, hourly load graphs, load-event detection, phase analysis, anomaly indicators, and price-aware consumption insights.
+Built with low-cost, widely available hardware, this project shows how affordable HAN/AMS data capture and analysis can help users better understand consumption patterns, identify costly load peaks, and improve everyday power usage.
 
-This project was developed as a practical learning and demonstration tool for understanding smart meter data, phase loading, household consumption patterns, and how HAN data can be used for analysis and troubleshooting.
+This repository contains the PC-side application and project material used to support a lightweight Arduino-based HAN bridge. The Arduino is intentionally kept simple and forwards raw smart meter frames to the PC, while the Python application performs parsing, CSV logging, visualization, event detection, phase analysis, anomaly indication, and price-aware consumption insight.
+
+The project was developed as a hands-on exploration of smart metering, HAN communication, live data handling, and troubleshooting-oriented presentation of electrical consumption data.
 
 ---
 
-## Features
+## Professional relevance
+
+This project is directly relevant to technical metering and utility-oriented troubleshooting work. It demonstrates practical interest in:
+
+- HAN/AMS communication
+- meter-data acquisition and validation
+- serial communication workflows
+- phase-based load analysis
+- detection of significant load changes
+- dashboard-based interpretation of measurement data
+- structured logging for later review and troubleshooting
+
+It is intended as a practical demonstration project and a portfolio example of applied technical work around smart metering and data interpretation.
+
+---
+
+## Key features
 
 - Live import and export monitoring
 - Phase overview for **L1**, **L2**, and **L3**
 - Current hour average and projected hourly average
-- Monthly top-hour tracking
-- Capacity charge estimation
+- Tracking of the highest monthly hours
+- Estimated capacity-charge exposure
 - Detection of large load changes
 - Likely phase contribution for major load steps
 - CSV logging for historical analysis
 - Daily hourly load graph
-- Spot price support for Norwegian price areas (**NO1–NO5**)
-- System status and anomaly indicators
+- Spot-price support for Norwegian price areas (**NO1–NO5**)
+- System-status and anomaly indicators
 - Full-screen dashboard for local monitoring
-
----
-
-## Why this project
-
-This project demonstrates how lightweight embedded data acquisition can be combined with PC-based analysis and visualization to build a practical HAN/AMS monitoring tool.
-
-It was created to explore:
-
-- smart meter communication over HAN
-- serial frame forwarding and parsing
-- live energy monitoring
-- phase-based load analysis
-- capacity-charge awareness
-- practical troubleshooting and interpretation of meter data
 
 ---
 
 ## System overview
 
-The solution is split into two parts:
+The solution is divided into two practical parts:
 
 ### Arduino bridge
 The Arduino side is intentionally lightweight and is used to:
 
-- receive HAN frames through a serial adapter
+- receive HAN frames through a serial interface adapter
 - reconstruct complete HDLC-style frames
-- forward them to the PC in a machine-readable format
-- keep the embedded side simple and reliable
+- forward the frames to the PC in a machine-readable format
+- keep the embedded side simple and stable
 
 ### Python dashboard
 The Python application is responsible for:
 
 - auto-detecting the correct serial port
-- parsing incoming smart meter frames
+- validating incoming frame format
+- parsing smart meter data
 - logging measurements to CSV
-- visualizing live and historical information
+- visualizing live and historical values
 - performing event detection and analysis
-- estimating capacity-charge exposure
+- estimating capacity-related exposure
 - enriching the dashboard with spot-price context
+
+---
+
+## Verified hardware setup
+
+The hardware setup used in this project has been verified in practice.
+
+Example setup:
+
+- Smart meter with HAN port enabled
+- M-Bus to TTL interface based on the **TI TSS721** transceiver
+- Arduino Uno or Nano
+- USB connection from Arduino to PC
+- Windows PC running Python
+
+---
+
+## Screenshots
+
+### Live dashboard
+![Live dashboard](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Live_Dashboard.png)
+
+### Analysis tab
+![Analysis tab](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Analysis_Dashboard.png)
+
+---
+
+## Hardware reference images
+
+### AMS Meter Nuri Kaifa
+![AMS Meter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134246.jpg)
+
+### Cat termination adapter
+![Cat cable adapter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134317.jpg)
+
+### Pin 1 and 2 connected, polarity does not matter
+![Cat pin 1 and 2](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134356.jpg)
+
+### M-Bus adapter wiring  
+The pin marked **RXD** on the M-Bus adapter is the signal line used as data input to the Arduino in this setup.
+![MBUS adapter wiring](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134414.jpg)
+
+### Arduino wiring  
+Data frames are read on **D2**.
+![Arduino wiring](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134532.jpg)
+
+### Full wiring overview
+![Complete setup](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134558.jpg)
 
 ---
 
@@ -76,51 +128,9 @@ Example structure based on this repository:
 └── README.md
 ```
 
-- `HAN/` – project-related Arduino/HAN material for the serial bridge workflow
+- `HAN/` – Arduino/HAN-related project material
 - `han_dashboard.py` – main Python dashboard application
 - `README.md` – project documentation
-
----
-
-### Live dashboard
-![Live dashboard](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Live_Dashboard.png)
-
-### Analysis tab
-![Analysis tab](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Analysis_Dashboard.png)
-
----
-
-### Hardware setup
-
-### AMS Meter Nuri Kaifa
-![AMS Meter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134246.jpg)
-
-### Cat termination adapter
-![Cat cable adapter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134317.jpg)
-
-### Pin 1 and 2 connected, polarity does not matter
-![Cat pin 1 and 2](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134356.jpg)
-
-### MBUS adapter wiring, The pin marked RXD M-Bus adapter is actually the one sending data...
-![MBUS adapter wiring](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134414.jpg)
-
-### Arduino wiring, Data frames are read on D2.
-![Arduino wiring](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134532.jpg)
-
-### Full wiring overview
-![Complete setup](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134558.jpg)
-
----
-
-## Hardware requirements
-
-Example setup:
-
-- Smart meter with HAN port enabled
-- M-Bus to TTL interface based on the TI TSS721 transceiver.
-- Arduino Uno or Nano
-- USB connection from Arduino to PC
-- Windows PC running Python
 
 ---
 
@@ -158,7 +168,7 @@ From the repository folder, run:
 python han_dashboard.py
 ```
 
-Or, if you want to force a specific serial port:
+If you want to force a specific serial port:
 
 ```bash
 python han_dashboard.py --port COM7
@@ -203,7 +213,7 @@ The Python application validates this format before accepting the serial source.
 
 ## Dashboard contents
 
-The dashboard is designed to present both operational and analytical information.
+The dashboard is intended to present both operational and analytical information.
 
 ### Live / customer view
 - current import and export
@@ -218,8 +228,8 @@ The dashboard is designed to present both operational and analytical information
 - top monthly hours
 - detected load events
 - system-status and anomaly indicators
-- meter / protocol context
-- logging and runtime information
+- meter and protocol context
+- runtime and logging information
 
 ---
 
@@ -242,7 +252,7 @@ This makes it possible to review consumption patterns and events outside the liv
 
 ---
 
-## Notes on spot prices
+## Spot-price context
 
 The dashboard can display Norwegian spot-price context by price area.
 
@@ -254,21 +264,21 @@ Supported areas:
 - NO4
 - NO5
 
-Price data may be used to improve interpretation of real-time import cost and daily energy-cost exposure.
+Price data is used to improve interpretation of live energy cost and day-to-day operating context.
 
 ---
 
 ## Related repositories
 
-This repository can also be viewed together with the dedicated Arduino-side repository:
+This repository can be viewed together with the related Arduino-focused project:
 
 - [AMS_HAN_Sniffer](https://github.com/thorelvin/AMS_HAN_Sniffer)  
-  Arduino-focused repository related to the HAN bridge workflow.
+  Arduino-oriented repository related to the HAN bridge workflow.
 
 - [AMS_HAN_Sniffer_PC](https://github.com/thorelvin/AMS_HAN_Sniffer_PC)  
-  Python desktop application repository for live monitoring, CSV logging, visualization, event detection, phase analysis, and price-aware consumption insights.
+  Python desktop application repository for live monitoring, CSV logging, visualization, event detection, phase analysis, and price-aware consumption insight.
 
-If you want to keep the embedded and PC-side development fully separated, these repositories can be maintained independently while still documenting the same overall project concept.
+Together, the two repositories describe a complete HAN/AMS monitoring concept with a lightweight embedded bridge and a more advanced PC-based analysis interface.
 
 ---
 
@@ -301,14 +311,14 @@ This is an active practical project focused on:
 
 ## Future improvements
 
-Planned or possible next steps:
+Possible next steps include:
 
 - more advanced event classification
 - improved anomaly detection
 - longer-term historical trends
-- better export / solar analytics
+- better export and solar analytics
 - richer graph views
-- more hardware compatibility
+- additional hardware compatibility
 - persistent settings
 - improved packaging for easier deployment
 
