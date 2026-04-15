@@ -100,3 +100,17 @@ Thor Elvin Valø
 ## License
 
 Open Source
+
+
+## Related repositories
+
+This solution is organized across two complementary repositories:
+
+* [AMS_HAN_Sniffer](https://github.com/thorelvin/AMS_HAN_Sniffer)
+  Contains the lightweight Arduino-based HAN bridge responsible for receiving raw smart meter frames and forwarding them to the PC.
+
+* [AMS_HAN_Sniffer_PC](https://github.com/thorelvin/AMS_HAN_Sniffer_PC)
+  Contains the Python desktop application for live monitoring, CSV logging, visualization, event detection, phase analysis, and price-aware consumption insights.
+
+Together, these repositories form a complete HAN/AMS monitoring platform with a clear separation between embedded frame acquisition and PC-based analysis and presentation.
+
