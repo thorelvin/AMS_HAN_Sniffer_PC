@@ -88,6 +88,7 @@ Example structure based on this repository:
 ### Analysis tab
 ![Analysis tab](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Analysis_Dashboard.png)
 
+---
 
 ### Hardware setup
 
