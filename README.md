@@ -37,9 +37,7 @@ The project is split into two parts:
 
 ## Screenshots
 
-Add dashboard screenshots here.
 
-![AMS Meter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134246.jpg)
 ![Live tab](images/live_tab.png)
 ![Analysis tab](images/analysis_tab.png)
 
@@ -53,7 +51,12 @@ Example setup:
 
 You can add wiring photos or diagrams here.
 
-![Hardware setup](images/hardware_setup.jpg)
+![AMS Meter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134246.jpg)
+![Cat cable adapter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134317.jpg)
+![Cat pin 1 and 2](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134356.jpg)
+![MBUS adapter wiring](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134414.jpg)
+![Arduino wiring](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134532.jpg)
+![Complete setup](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134558.jpg)
 
 ## How it works
 
