@@ -180,6 +180,7 @@ The Arduino bridge should:
 - read HAN frames from the smart meter interface
 - forward them to the PC over USB serial
 - keep the microcontroller side free of heavy analysis logic
+- builtin led on Arduino flashes every time a frams is sent, as an activity indicator
 
 ### 2. Close Arduino Serial Monitor
 Make sure the Arduino IDE Serial Monitor is closed before starting the Python dashboard, otherwise the COM port may already be in use.
