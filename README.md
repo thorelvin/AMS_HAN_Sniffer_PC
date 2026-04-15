@@ -39,7 +39,7 @@ The project is split into two parts:
 
 Add dashboard screenshots here.
 
-![Dashboard overview](images/dashboard_overview.png)
+![AMS Meter]([images/dashboard_overview.png](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134246.jpg))
 ![Live tab](images/live_tab.png)
 ![Analysis tab](images/analysis_tab.png)
 
