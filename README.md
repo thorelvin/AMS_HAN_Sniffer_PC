@@ -4,9 +4,18 @@ A practical HAN/AMS smart meter monitoring and analysis project built with Ardui
 
 Built with low-cost, widely available hardware, this project shows how affordable HAN/AMS data capture and analysis can help users better understand consumption patterns, identify costly load peaks, and improve everyday power usage.
 
-This repository contains the PC-side application and project material used to support a lightweight Arduino-based HAN bridge. The Arduino is intentionally kept simple and forwards raw smart meter frames to the PC, while the Python application performs parsing, CSV logging, visualization, event detection, phase analysis, anomaly indication, and price-aware consumption insight.
+This repository contains the PC-side application and project material used to support a lightweight Arduino-based HAN bridge.
+The Arduino is intentionally kept simple and forwards raw smart meter frames to the PC, while the Python application performs parsing, CSV logging, visualization, event detection, phase analysis, anomaly indication, and price-aware consumption insight.
 
 The project was developed as a hands-on exploration of smart metering, HAN communication, live data handling, and troubleshooting-oriented presentation of electrical consumption data.
+
+---
+
+### Live dashboard
+![Live dashboard](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Live_Dashboard.png)
+
+### Analysis tab
+![Analysis tab](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Analysis_Dashboard.png)
 
 ---
 
@@ -80,16 +89,6 @@ Example setup:
 - Arduino Uno or Nano
 - USB connection from Arduino to PC
 - Windows PC running Python
-
----
-
-## Screenshots
-
-### Live dashboard
-![Live dashboard](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Live_Dashboard.png)
-
-### Analysis tab
-![Analysis tab](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Analysis_Dashboard.png)
 
 ---
 
