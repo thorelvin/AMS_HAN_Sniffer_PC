@@ -105,7 +105,7 @@ Example setup:
 ![Cat pin 1 and 2](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134356.jpg)
 
 ### M-Bus adapter wiring  
-The pin marked **RXD** on the M-Bus adapter is the signal line used as data input to the Arduino in this setup.
+The pin marked **RXD** (yellow cable) on the M-Bus adapter is the signal line used as data input to the Arduino in this setup.
 ![MBUS adapter wiring](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134414.jpg)
 
 ### Arduino wiring  
@@ -116,6 +116,43 @@ Data frames are read on **D2**.
 ![Complete setup](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134558.jpg)
 
 ---
+
+## Wiring diagram
+
+The hardware is connected as follows:
+
+- **Smart meter HAN port**
+  - Use the HAN / RJ45 output from the meter
+  - In this setup, the M-Bus pair is taken from **pin 1** and **pin 2**
+  - Polarity does **not** matter for this connection
+
+- **HAN / M-Bus to TTL adapter**
+  - Connect the two HAN wires from the smart meter to the M-Bus input on the adapter
+  - The adapter used in this setup is based on the **TI TSS721** M-Bus transceiver
+
+- **Adapter to Arduino**
+  - **Adapter RXD** -> **Arduino D2**
+  - **Adapter GND** -> **Arduino GND**
+
+- **Arduino to PC**
+  - Connect the Arduino to the PC with USB
+  - The Arduino forwards complete HAN frames to the Python application over USB serial
+ 
+---
+
+### Summary
+
+```text
+Smart meter HAN port (RJ45 pin 1 + pin 2)
+        ->
+M-Bus / HAN to TTL adapter
+        ->
+Adapter RXD -> Arduino D2
+Adapter GND -> Arduino GND
+        ->
+Arduino USB
+        ->
+PC running the Python dashboard
 
 ## Repository structure
 
