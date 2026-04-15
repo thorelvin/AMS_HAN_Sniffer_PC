@@ -321,6 +321,23 @@ Any suspected electrical faults, wiring issues, or safety concerns should be eva
 
 ---
 
+## Professional relevance
+
+This project demonstrates practical work with HAN/AMS meter data, serial communication, live monitoring, phase analysis, and troubleshooting-oriented visualization. It is directly relevant to utility metering environments where reliable data handling, communication quality, and structured analysis of consumption behavior are important.
+
+---
+
+## Example use cases
+
+- Real-time monitoring of household power import and export
+- Detection of load increases that may affect monthly capacity charges
+- Phase-oriented analysis of major load events
+- CSV-based logging for documentation and later troubleshooting
+- Live cost context through Norwegian spot-price areas
+- Identification of imbalance and other indicators that may justify further technical inspection
+
+---
+
 ## Current status
 
 This is an active practical project focused on:
