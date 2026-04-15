@@ -88,7 +88,10 @@ Example structure based on this repository:
 ### Analysis tab
 ![Analysis tab](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/Analysis_Dashboard.png)
 
+
 ### Hardware setup
+
+### AMS Meter Nuri Kaifa
 ![AMS Meter](https://github.com/thorelvin/AMS_HAN_Sniffer_PC/blob/main/HAN/20260415_134246.jpg)
 
 ### Cat termination adapter
