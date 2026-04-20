@@ -147,11 +147,13 @@ Example structure based on this repository:
 ```text
 .
 ├── HAN
+├── AMS_HAN_Avleser_PC.ino
 ├── han_dashboard.py
 └── README.md
 ```
 
 - `HAN/` – Arduino/HAN-related images
+- `AMS_HAN_Avleser_PC.ino` – lightweight Arduino firmware
 - `han_dashboard.py` – main Python dashboard application
 - `README.md` – project documentation
 
