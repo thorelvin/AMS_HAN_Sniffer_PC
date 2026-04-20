@@ -306,6 +306,9 @@ This repository can be viewed together with the related Arduino-focused project:
 - [AMS_HAN_Sniffer_PC](https://github.com/thorelvin/AMS_HAN_Sniffer_PC)  
   Python desktop application repository for live monitoring, CSV logging, visualization, event detection, phase analysis, and price-aware consumption insight.
 
+- [AMS_HAN_Gateway](https://github.com/thorelvin/AMS-HAN-Gateway)
+  Reads AMS HAN meter data with ESP32 and provides live monitoring, diagnostics, replay tools, and Norwegian power cost analysis. 
+
 Together, the two repositories describe a complete HAN/AMS monitoring concept with a lightweight embedded bridge and a more advanced PC-based analysis interface.
 
 ---
