@@ -25,6 +25,23 @@ The hardware setup used in this project has been verified in practice.
 
 ---
 
+## Check out the related repositories
+
+This repository can be viewed together with the related Arduino-focused project:
+
+- [AMS_HAN_Gateway](https://github.com/thorelvin/AMS-HAN-Gateway)
+  New version! Reads AMS HAN meter data with ESP32 and provides live monitoring, diagnostics, replay tools, and Norwegian power cost analysis, MQTT. 
+
+- [AMS_HAN_Sniffer](https://github.com/thorelvin/AMS_HAN_Sniffer)  
+  Arduino-oriented repository related to the HAN bridge workflow.
+
+- [AMS_HAN_Sniffer_PC](https://github.com/thorelvin/AMS_HAN_Sniffer_PC)  
+  Python desktop application repository for live monitoring, CSV logging, visualization, event detection, phase analysis, and price-aware consumption insight.
+
+Together, the two repositories describe a complete HAN/AMS monitoring concept with a lightweight embedded bridge and a more advanced PC-based analysis interface.
+
+---
+
 ## Professional relevance
 
 This project is directly relevant to technical metering and utility-oriented troubleshooting work. It demonstrates practical interest in:
@@ -293,23 +310,6 @@ Supported areas:
 - NO5
 
 Price data is used to improve interpretation of live energy cost and day-to-day operating context.
-
----
-
-## Related repositories
-
-This repository can be viewed together with the related Arduino-focused project:
-
-- [AMS_HAN_Sniffer](https://github.com/thorelvin/AMS_HAN_Sniffer)  
-  Arduino-oriented repository related to the HAN bridge workflow.
-
-- [AMS_HAN_Sniffer_PC](https://github.com/thorelvin/AMS_HAN_Sniffer_PC)  
-  Python desktop application repository for live monitoring, CSV logging, visualization, event detection, phase analysis, and price-aware consumption insight.
-
-- [AMS_HAN_Gateway](https://github.com/thorelvin/AMS-HAN-Gateway)
-  Reads AMS HAN meter data with ESP32 and provides live monitoring, diagnostics, replay tools, and Norwegian power cost analysis. 
-
-Together, the two repositories describe a complete HAN/AMS monitoring concept with a lightweight embedded bridge and a more advanced PC-based analysis interface.
 
 ---
 
