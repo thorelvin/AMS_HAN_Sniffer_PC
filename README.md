@@ -9,6 +9,8 @@ The Arduino is intentionally kept simple and forwards raw smart meter frames to 
 
 The project was developed as a hands-on exploration of smart metering, HAN communication, live data handling, and troubleshooting-oriented presentation of electrical consumption data.
 
+A version 3 with wifi and MQTT smart house integration is in the works. It will also include a updated and more advanced python monitoring software for pc.
+
 ## Verified hardware setup
 
 The hardware setup used in this project has been verified in practice.
