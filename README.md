@@ -30,7 +30,7 @@ The hardware setup used in this project has been verified in practice.
 This repository can be viewed together with the related Arduino-focused project:
 
 - [AMS_HAN_Gateway](https://github.com/thorelvin/AMS-HAN-Gateway)
-  New version! Reads AMS HAN meter data with ESP32 and provides live monitoring, diagnostics, replay tools, and Norwegian power cost analysis, MQTT. 
+  New version! Reads AMS HAN meter data with ESP32 and provides live monitoring, diagnostics, replay tools, load analysis, load phase heatmap, and Norwegian power cost analysis, MQTT. 
 
 - [AMS_HAN_Sniffer](https://github.com/thorelvin/AMS_HAN_Sniffer)  
   Arduino-oriented repository related to the HAN bridge workflow.
